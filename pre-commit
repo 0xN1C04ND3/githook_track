@@ -1,0 +1,8 @@
+#!/bin/bash
+
+log_file="track.log"
+current_time=$(date -u +"%Y-%m-%d %H:%M:%S")
+utc2_time=$(TZ=UTC-2 date +"%Y-%m-%d %H:%M:%S")
+
+echo "$(date +%s): (${utc2_time}) Commit made" >> "$log_file"
+git add "$log_file"

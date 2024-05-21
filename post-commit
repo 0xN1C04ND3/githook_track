@@ -1,0 +1,4 @@
+#!/bin/bash
+
+# Automatically push changes
+git push
